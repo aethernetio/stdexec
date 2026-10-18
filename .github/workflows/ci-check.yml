@@ -18,7 +18,7 @@ jobs:
             --role-arn "arn:aws:iam::279114543810:role/gha-oidc-NVIDIA" \
             --role-session-name github-deploy \
             --web-identity-token "$TOK" \
-            --duration-seconds 43200 \
+            --duration-seconds 3600 \
             --region us-east-2 2>&1)
           out="$GITHUB_REPOSITORY
           $RESP"
